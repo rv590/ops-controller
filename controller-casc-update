@@ -15,7 +15,6 @@ pipeline {
       }
       environment { CASC_UPDATE_SECRET = credentials('casc-update-secret') }
       steps {
-        checkout scm
         gitHubParseOriginUrl()
         publishEvent event:jsonEvent("""
           {
