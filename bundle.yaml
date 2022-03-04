@@ -1,14 +1,14 @@
 apiVersion: "1"
-version: "2"
+version: "3"
 id: "rv590-ops-controller"
 description: "CloudBees CI configuration bundle for the rv590 ops-controller Controller"
 availabilityPattern: "cloudbees-ci-casc-workshop/rv590/ops-controller"
 jcasc:
-  - "jenkins.yaml"
+  - "jcasc/"
 plugins:
   - "plugins.yaml"
-items:
-  - "items.yaml"
 catalog:
   - "plugin-catalog.yaml"
+items:
+  - "items.yaml"
   
